@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Decovar Regular24';
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    height: 30vh;
+    line-height: 30vh;
+    width: 100vw;
+    -webkit-text-fill-color: #fff;
+    background-size: 30%;
+    background-repeat: repeat;
+    animation: grow 4s linear infinite;
+    font-size: 70px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #f72323;
+    background-image: radial-gradient(white, rgba(255, 255, 255, .2) 4px, transparent 20px),
+    radial-gradient(white, rgba(255, 255, 255, .15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255, 255, 255, .1) 2px, transparent 40px),
+    radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+    height: 100%;
+}
+
+.btn {
+    position: fixed;
+    left: 50%;
+    top: 60%;
+    margin: -150px 0 0 -150px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    color: #f72424;
+    font-size: 70px;
+    text-align: center;
+    line-height: 300px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    box-shadow: inset -1px 1px 4px 2px #ebff47;
+    background-color: #ffe947;
+    background-image: radial-gradient(white, rgba(255, 255, 255, .2) 4px, transparent 20px),
+    radial-gradient(white, rgba(255, 255, 255, .15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255, 255, 255, .1) 2px, transparent 40px),
+    radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+
+}
+
+.show-detail{
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 0;
+}
+
+.win1 i,.win2 i,.win3 i{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url("../win1.jpeg") center bottom no-repeat;
+    background-size: 100% auto;
+}
+
+.win0 i{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url("../win0.jpg") center bottom no-repeat;
+    background-size: 100% auto;
+}
+
+.win2,.win3{
+    font-size: 56px;
+}
+
+
+
+
+

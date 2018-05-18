@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="IP、影视剧、穿越、异世界、测试、角色扮演">
+    <meta name="description" content="你掉入了影视剧的异世界，只有“绝对主角”才能顺利活过10天。你会是“绝对主角”吗？">
+    <title>免单小游戏</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<script>
+
+    // add by zhangxinxu 让iOS9- Safari :active伪类生效
+    document.body.addEventListener('ontouchstart', function() {});
+    // Safari使用-webkit-tap-highlight-color高亮，因为:active时机有问题
+    if (/iphone/i.test(navigator.userAgent)) {
+        document.body.style.webkitTapHighlightColor = 'rgba(0,0,0,.05)';
+        document.body.classList.add('iphone');
+    }
+</script>
+<div class="page">
+    <h1 class="j_count">点击抽奖</h1>
+    <div class="btn-box">
+        <a href="javascript:;" class="btn" id="j_btn">
+            <span>戳</span>
+            <i></i>
+        </a>
+    </div>
+</div>
+<script type="text/javascript" src="js/require.js"></script>
+<script>
+    //通用配置
+    require.config({
+        baseUrl: './js/',
+        paths: {
+            Zepto: 'zepto.min'
+        }
+    });
+    // Start the main app logic.
+    require(['index'], function (index) {
+        //页面js执行
+        index.init();
+    });
+</script>
+</body>
+</html>
