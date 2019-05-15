@@ -24,6 +24,11 @@ define(['Zepto'], function ($) {
 
       $('#j_width').html(deviceWidthDp);
       $('#j_basedp').html(baseDp);
+      
+      $('#link').on('click',function() {
+        var url = $('#url').val();
+        location.href = 'QDHWReader://app/open?query=' + encodeURIComponent('{"url":"' + url + '","viewmode":4}')
+      })
 
     }
   };
