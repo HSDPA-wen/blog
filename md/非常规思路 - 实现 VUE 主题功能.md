@@ -27,7 +27,7 @@
 
 全局设置主题，改变页面所有组件样式，如下图：
 
-![Alt text](https://imgservices-1252317822.image.myqcloud.com/file/20190701/10cd5d736efa.gif)
+<img src="https://imgservices-1252317822.image.myqcloud.com/file/20190701/10cd5d736efa.gif" width="700" />
 
 组件内部设置组件主题如下图：
 
