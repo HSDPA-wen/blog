@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+</head>
+<body style="background: #fff;">
+  <script src="//qidian.gtimg.com/qd_jssdk/3.0.2/qd.min.js"></script>
+  <script>
+    var showMoreData = {
+          showShare: true,
+          // 分享实体
+        shareItem: {
+          title: '我是的demo',
+          desc: '我是的demo',
+          imageUrl: 'https://imgservices-1252317822.image.myqcloud.com/image/20210305/a3xod09wdn.png',
+          url: location.href,
+          type: 5,
+          channels: '1,2,3,5',
+          bitmapUrl: '',
+          disableNativeAction: true // 禁用客户端默认的回调，如果不设置，那么在Android下，无法执行回调函数。
+        },
+        showComplain: false,
+        showAddress: false,
+        otherItems: []
+      }
+      window.jssdk.app.showMore(showMoreData, (data) => {
+        // 分享成功后的回调，可用于数据打点等
+        success && success(data)
+      })
+  </script>
+</body>
+</html>
